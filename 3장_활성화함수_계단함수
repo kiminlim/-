@@ -1,0 +1,25 @@
+import numpy as np
+
+    #< 활성화함수 >#
+
+# 계단함수 구현
+
+def step_function1(x):
+    if x > 0 :
+        return 1
+    else:
+        return 0
+
+
+print(step_function1(3.0))
+
+
+# > 넘파이 배열도 가능한 계단함수 >
+
+def step_function(x) :
+    y = x > 0
+    return y.astype(np.int)
+
+print(step_function(np.array([1.0,2.0])))
+
+
